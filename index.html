@@ -50,6 +50,13 @@
         var inimigoOppt = "";
 
 
+        function validarVitoria(){
+
+
+            alert(playerOpt);
+            alert(inimigoOppt);
+        }
+
         function resetInimigo (){
             const enemyoptions = document.querySelectorAll('.enemy-options div');
             for(var i = 0; i < enemyoptions.length; i++){
@@ -58,6 +65,8 @@
             
             }
         }
+
+
 
         function inimigoJogar (){
             let rand = Math.floor(Math.random()*2);
@@ -74,10 +83,10 @@
 
 
 
+            validarVitoria();
 
 
 
-            
             //alert(playerOpt);
             //alert(inimigoOppt);
         }
