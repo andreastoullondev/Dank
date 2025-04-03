@@ -64,11 +64,11 @@
                 }else if(inimigoOppt == "scisor"){
                     // Inimigo ganhou 
 
-                    vencedor.innerHTML = "QUE ABALO,PERDI PRA IA";
+                    vencedor.innerHTML = "QUE ABALO, PERDI PRA IA";
                 }else if(inimigoOppt == "rock"){
 
                     // EU GANHEI 
-                    vencedor.innerHTML = "Deu A LOGICA";
+                    vencedor.innerHTML = "Deu A LÓGICA";
                 }
             }
 
@@ -80,16 +80,16 @@
                 if(inimigoOppt == "rock"){
                     //Empate
 
-
+                    vencedor.innerHTML = "Empate Técnico";
                 }else if(inimigoOppt == "scisor"){
                     //Eu Ganho
 
 
-
+                    vencedor.innerHTML = "Deu a Lógica";
                 }else if(inimigoOppt == "paper"){
                     //Inimigo ganha
 
-                    
+                    vencedor.innerHTML = "QUE ABALO, PERDI PRA IA";
                 }
             }
 
@@ -108,7 +108,7 @@
 
 
         function inimigoJogar (){
-            let rand = Math.floor(Math.random()*2);
+            let rand = Math.floor(Math.random()*3);
             
             const enemyoptions = document.querySelectorAll('.enemy-options div');
             resetInimigo();
