@@ -56,15 +56,19 @@
             let vencedor = document.querySelector('.vencedor');
 
             if(playerOpt == "paper" ){
-                // empate
-
-                vencedor.innerHTML = "EMPATE TÉCNICO"
+                
                 if(inimigoOppt == "paper"){
+                        // empate
 
+                        vencedor.innerHTML = "EMPATE TÉCNICO";
                 }else if(inimigoOppt == "scisor"){
+                    // Inimigo ganhou 
 
+                    vencedor.innerHTML = "QUE ABALO,PERDI PRA IA";
                 }else if(inimigoOppt == "rock"){
 
+                    // EU GANHEI 
+                    vencedor.innerHTML = "Deu A LOGICA";
                 }
             }
 
