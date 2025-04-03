@@ -93,6 +93,25 @@
                 }
             }
 
+
+            if( playerOpt == "scisor"){
+
+                if(inimigoOppt == "rock"){
+                    //inimigo ganha
+
+
+                    vencedor.innerHTML = "QUE ABALO, PERDI PRA IA";
+                }else if(inimigoOppt == "scisor"){
+                    //empate
+
+                    vencedor.innerHTML = "Empate Técnico";
+                }else if(inimigoOppt == "paper"){
+                    //Eu ganhor
+
+                    vencedor.innerHTML = "Deu a Lógica";
+                }
+            }
+
             
         }
 
