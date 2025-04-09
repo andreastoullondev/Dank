@@ -104,8 +104,12 @@
                 var precoProduto = document.querySelector('input[name=valor_produto]').value;
 
 
-                alert(nomeProduto);
-                alert(precoProduto);
+             itens.push({
+                nome: nomeProduto,
+                valor: precoProduto
+             });
+
+             alert(itens[0].nome)
             });
         </script>
 </body>
