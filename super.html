@@ -90,8 +90,8 @@
             <h1>Total: R$0</h1>
         </div>
 
-        <button>
-            
+        <button name="limptar">
+            Limpar
         </button>
         <script>
             var itens = [];
@@ -136,6 +136,11 @@
             let elementosSoma = document.querySelector('.soma-produto h1')
             elementosSoma.innerHTML = 'R$'+soma;
             });
+
+
+            document.querySelector('input[name=limpar]').addEventListener('click',()=>{
+
+            })
         </script>
 </body>
 </html>
