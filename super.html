@@ -97,7 +97,7 @@
 
             document.querySelector('input[type=submit]').addEventListener('click',()=>{
                 var nomeProduto = document.querySelector('input[name=nome_produto]').value;
-                var precoProduto = document.querySelector('input[name=valor_produto]').value;
+                var precoProduto = document.querySelector('input[name=price]').value;
 
 
              itens.push({
@@ -116,9 +116,17 @@
                 let listaProdutos = document.querySelector('.lista-produtos')
             itens.map(function(val){
 
+                listaProdutos.innerHTML = "";
+                listaProdutos.innerHTML+=`
+                
+            <div class="lista-produtos-single">
+                <h3>`+val.nome+`</h3>
+                <h3 class="price-produto"><span>R$`+val.valor+`</span></h3>
+            </div>
+                `
             })
 
-             alert(itens[0].nome)
+            
             });
         </script>
 </body>
