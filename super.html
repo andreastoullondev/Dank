@@ -87,10 +87,12 @@
 
 
         <div class="soma-produto">
-            <h1>Total: R$100,00</h1>
+            <h1>Total: R$0</h1>
         </div>
 
-
+        <button>
+            
+        </button>
         <script>
             var itens = [];
 
@@ -117,7 +119,7 @@
                 let soma = 0;
                 listaProdutos.innerHTML = "";
             itens.map(function(val){
-                soma+=val.valor;
+                soma+=parseFloat(val.valor);
                 listaProdutos.innerHTML+=`
                 
             <div class="lista-produtos-single">
@@ -127,9 +129,12 @@
                 `
             })
 
-            alert(soma);
+            soma = soma.toFixed(2)
             nomeProduto.value = "";
             precoProduto.value = "";
+
+            let elementosSoma = document.querySelector('.soma-produto h1')
+            elementosSoma.innerHTML = 'R$'+soma;
             });
         </script>
 </body>
