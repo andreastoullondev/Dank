@@ -96,13 +96,13 @@
 
 
             document.querySelector('input[type=submit]').addEventListener('click',()=>{
-                var nomeProduto = document.querySelector('input[name=nome_produto]').value;
-                var precoProduto = document.querySelector('input[name=price]').value;
+                var nomeProduto = document.querySelector('input[name=nome_produto]');
+                var precoProduto = document.querySelector('input[name=price]');
 
 
              itens.push({
-                nome: nomeProduto,
-                valor: precoProduto
+                nome: nomeProduto.value,
+                valor: precoProduto.value
              });
 
 
@@ -114,9 +114,10 @@
 
             */
                 let listaProdutos = document.querySelector('.lista-produtos')
-            itens.map(function(val){
-
+                let soma = 0;
                 listaProdutos.innerHTML = "";
+            itens.map(function(val){
+                soma+=val.valor;
                 listaProdutos.innerHTML+=`
                 
             <div class="lista-produtos-single">
@@ -126,7 +127,9 @@
                 `
             })
 
-            
+            alert(soma);
+            nomeProduto.value = "";
+            precoProduto.value = "";
             });
         </script>
 </body>
