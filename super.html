@@ -139,7 +139,10 @@
 
 
             document.querySelector('button[name=limpar]').addEventListener('click',()=>{
-                alert('limpado');
+               itens = [];
+
+               document.querySelector('.lista-produtos').innerHTML = "";
+               document.querySelector('.soma-produto h1').innerHTML = "Total R$";
             })
         </script>
 </body>
