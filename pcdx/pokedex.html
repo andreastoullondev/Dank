@@ -49,7 +49,12 @@
     </div>
 </div>
 
+<script>
 
+    fetch('https://pokeapi.co/api/v2/pokemon?limit=10')
+        .then(Response => Response.json())
+        .then(allpokemon => console.log(allpokemon))
+</script>
 
 </body>
 </html>
