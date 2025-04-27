@@ -59,6 +59,17 @@
 
             allpokemon.results.map((val)=>{
             pokemons.push({nome:val.name});
+
+                fetch('https://pokeapi.co/api/v2/pokemon?limit=10')
+                    .then(Response => response.json())
+                    .then(pokemonSingle =>{
+                        
+                    })
+
+
+
+
+
             })
 
             pokemons.map((val)=>{
