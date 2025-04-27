@@ -55,6 +55,8 @@
         .then(Response => Response.json())
         .then(allpokemon => {
 
+            var pokemons = [];
+
             allpokemon.results.map((val)=>{
                 console.log(val);
             })
