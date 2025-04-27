@@ -58,12 +58,20 @@
             var pokemons = [];
 
             allpokemon.results.map((val)=>{
-            pokemons.push({nome:val.name});
+           
 
-                fetch('https://pokeapi.co/api/v2/pokemon?limit=10')
-                    .then(Response => response.json())
+                fetch(val.url)
+                    .then(Response => Response.json())
                     .then(pokemonSingle =>{
                         
+                        pokemons.push({nome:val.name, Image:pokemonSingle.sprites.front_default});
+
+
+
+
+                        if(pokemons.length == 10){
+                            console.log(pokemons);
+                        }
                     })
 
 
