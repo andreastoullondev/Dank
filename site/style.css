@@ -22,16 +22,25 @@ header > .center{
 }
 
 .logo{
+    color: wheat;
+    font-size: 21px;
     width: 50%;
 }
 
 .menu{
+    text-align: right;
     width: 50%;
 }
 
 .menuul{list-style: none;}
 .menu li{
+    margin-right: 10px ;
+    font-size: 21px;
     display: inline-block;
+}
+
+.menu a{
+    color: wheat;
 }
 
 
