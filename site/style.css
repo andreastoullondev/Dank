@@ -62,3 +62,6 @@ section.texto-chamada h3{
     
     font-weight: normal;
 }
+section.texto-chamada h3 > b{
+    color: black;
+}
